@@ -10,5 +10,16 @@ try:
     #debug
     print(tg)
 
+#Occurs when no file
+except IOError:
+    print("Error: Failed to load the attendance")
+    print("IOError")
+
+#Occurs when invalid value    
+except ValueError:
+    print("Error: Failed to load the attendance")
+    print("ValueError")
+
 except:
     print("Error: Failed to load the attendance")
+    print("Unknown Error")    
