@@ -20,6 +20,15 @@ except ValueError:
     print("Error: Failed to load the attendance")
     print("ValueError")
 
+    for entry in open("Class10w.txt"):
+        entry.rsplit()
+        student, attendance = entry.split(":")
+        try:
+            attendance = int(attendance)
+        except:
+            tg[student] = (attendance)
+            print(student + ":" + attendance)
+
 except:
     print("Error: Failed to load the attendance")
     print("Unknown Error")    
